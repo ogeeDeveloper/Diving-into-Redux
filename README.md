@@ -2,8 +2,6 @@
 
 ---
 
-
-
 ## What is Redux?
 
 For me, Redux is basically about having one central data (Store) in your application.
@@ -19,8 +17,6 @@ It's important to note that components never directly edit the data in the Store
 The Reducer Function is a general concept and not to be mistaken for the UseReducer hook in React. The Reducer Function will take input as a parameter and then transform that input and reduce it, for example, reduce a list and sum them. This function will receive input and spits out a new value (output)
 
 The component will then trigger an action. Actions are JavaScript object which describes some operation that the Reducer should perform and Redux will pass those actions to the Reducer Function.
-
-
 
 # How to use Redux
 
@@ -92,12 +88,9 @@ const counterReducer = (state, action)=>{
   }
   ```
 
-- Lastly, we will create and dispatch actions by using the dispatch() method, which is a JavaScriptobjectt that accepts a type prop that acts as a unique item identifier which is often a unique string.
+- Lastly, we will create and dispatch actions by using the dispatch() method, which is a JavaScript object that accepts a type prop that acts as a unique item identifier which is often a unique string.
 
 ```js
 store.dispatch({type: 'increment'})
 store.dispatch({type: 'decrement'})
-
 ```
-
-
